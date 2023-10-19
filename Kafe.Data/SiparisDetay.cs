@@ -8,13 +8,13 @@ namespace Kafe.Data
 {
     public class SiparisDetay
     {
-        public string UrunAd { get; set; }
+        public string UrunAd { get; set; } = string.Empty;
         public decimal BirimFiyat { get; set; }
         public int Adet { get; set; }
-        public string TutarTL { get; private set; }
+        public string TutarTL { get { return Tutar().ToString("c2"); }  } 
         public decimal Tutar()
         {
-            return 0;
+            return Adet * BirimFiyat;
         }
     }
 }

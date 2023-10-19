@@ -8,10 +8,10 @@ namespace Kafe.Data
 {
     public class KafeVeri
     {
-        public List<Urun> Urunler { get; set; }
-        public int MasaAdet { get; set; }
-        public List<Siparis> AktifSiparisler { get; set; }
-        public List<Siparis> GecmisSiparisler { get; set; } 
+        public int MasaAdet { get; set; } = 20;
+        public List<Urun> Urunler { get; set; } = new();
+        public List<Siparis> AktifSiparisler { get; set; } = new();
+        public List<Siparis> GecmisSiparisler { get; set; } = new();
 
     }
 }

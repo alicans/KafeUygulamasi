@@ -8,10 +8,14 @@ namespace Kafe.Data
 {
     public class Urun
     {
-        public string UrunAd { get; set; }
+        public string UrunAd { get; set; } = string.Empty;
         public decimal BirimFiyat { get; set; }
-        public override string ToString() => $"{UrunAd} ({BirimFiyat:c2})";
-        
+        public override string ToString()
+        {
+            return $"{UrunAd} ({BirimFiyat:c2})";
+        }
+
+
 
     }
 }

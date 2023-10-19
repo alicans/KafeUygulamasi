@@ -1,0 +1,9 @@
+﻿Kafe Uygulaması İçin Gerekli Kaynaklar ektedir.
+
+Kafe Arayüz
+form1 AnaForm: MenuStrip, ListView
+form2 SiparisForm: Label, Button, DataGridView, NumericUpDown, ComboBox
+form3 UrunlerForm: TextBox, Label, Button, DataGridView, NumericUpDown
+form4 GecmisSiparislerForm: SplitContainer, Label, DataGridView
+
+Veriler örnektir. Masaları ve bilgileri eklemeniz istenmemektedir. Bunları sonrasında beraber programı geliştirdikçe ekleyeceğiz. Aynı şekilde form controllerinin name özelliklerine sonrasında beraber aynı isimleri gireceğiz, onları da şimdilik girmeyin.
