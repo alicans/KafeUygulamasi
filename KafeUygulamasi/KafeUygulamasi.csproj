@@ -12,4 +12,8 @@
     <None Remove="beniokı.tct" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kafe.Data\Kafe.Data.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -59,6 +59,7 @@
             // 
             // btnEkle
             // 
+            btnEkle.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnEkle.Location = new Point(405, 37);
             btnEkle.Margin = new Padding(6, 5, 6, 5);
             btnEkle.Name = "btnEkle";
