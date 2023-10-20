@@ -23,7 +23,7 @@ namespace KafeUygulamasi
 
         private void OrnekUrunleriYukle()
         {
-           if(db.Urunler.Count == 0)
+            if (db.Urunler.Count == 0)
             {
                 db.Urunler.Add(new Urun() { UrunAd = "Çay", BirimFiyat = 20.00m });
                 db.Urunler.Add(new Urun() { UrunAd = "Kola", BirimFiyat = 35.00m });
@@ -64,10 +64,20 @@ namespace KafeUygulamasi
             }
 
             // yeni bir sipariş formu aç
-            SiparisForm siparisForm = new SiparisForm(db,siparis);
+            SiparisForm siparisForm = new SiparisForm(db, siparis);
             siparisForm.ShowDialog();
 
+            if (siparis.Durum != SiparisDurum.Aktif)
+            {
+                lvi.ImageKey = "bos";
+            }
 
+
+        }
+
+        private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
+        {
+            new GecmisSiparislerForm(db).ShowDialog();
         }
     }
 }

@@ -33,7 +33,7 @@ namespace KafeUygulamasi
 
         private void Guncelle()
         {
-            Text = $"Masa {_siparis.MasaNo.ToString("00")} (Açılış zamanı: {_siparis.AcilisZamani})";
+            Text = $"Masa {_siparis.MasaNo.ToString("00")}";
             lblMasaNo.Text = _siparis.MasaNo.ToString("00");
             lblOdemeTutari.Text = _siparis.ToplamTutarTL;
         }
@@ -41,8 +41,10 @@ namespace KafeUygulamasi
         private void btnDetayEkle_Click(object sender, EventArgs e)
         {
             if (cmbUrun.SelectedItem == null) return;
+
             Urun urun = (Urun)cmbUrun.SelectedItem;
             SiparisDetay sd = new SiparisDetay();
+
             sd.UrunAd = urun.UrunAd;
             sd.BirimFiyat = urun.BirimFiyat;
             sd.Adet = (int)nudAdet.Value;
