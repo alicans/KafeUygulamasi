@@ -23,6 +23,7 @@ namespace KafeUygulamasi
             InitializeComponent();
             cmbUrun.DataSource = db.Urunler;
             DetaylariListele();
+
         }
 
         private void DetaylariListele()
