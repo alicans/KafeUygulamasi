@@ -79,5 +79,10 @@ namespace KafeUygulamasi
         {
             new GecmisSiparislerForm(db).ShowDialog();
         }
+
+        private void tsmiUrunler_Click(object sender, EventArgs e)
+        {
+            new UrunlerForm(db).ShowDialog();
+        }
     }
 }

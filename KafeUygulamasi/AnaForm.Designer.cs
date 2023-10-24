@@ -53,6 +53,7 @@
             tsmiUrunler.Name = "tsmiUrunler";
             tsmiUrunler.Size = new Size(58, 19);
             tsmiUrunler.Text = "Ürünler";
+            tsmiUrunler.Click += tsmiUrunler_Click;
             // 
             // tsmiGecmisSiparisler
             // 

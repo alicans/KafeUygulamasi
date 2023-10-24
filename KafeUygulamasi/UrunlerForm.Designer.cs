@@ -67,26 +67,39 @@
             btnEkle.TabIndex = 2;
             btnEkle.Text = "EKLE";
             btnEkle.UseVisualStyleBackColor = true;
+            btnEkle.Click += btnEkle_Click;
             // 
             // dgvUrunler
             // 
+            dgvUrunler.AllowUserToAddRows = false;
+            dgvUrunler.AllowUserToDeleteRows = false;
+            dgvUrunler.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvUrunler.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUrunler.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvUrunler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUrunler.Location = new Point(15, 82);
             dgvUrunler.Margin = new Padding(6, 5, 6, 5);
+            dgvUrunler.MultiSelect = false;
             dgvUrunler.Name = "dgvUrunler";
+            dgvUrunler.ReadOnly = true;
             dgvUrunler.RowTemplate.Height = 25;
+            dgvUrunler.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUrunler.Size = new Size(509, 387);
             dgvUrunler.TabIndex = 3;
             // 
             // nudBirimFiyat
             // 
+            nudBirimFiyat.DecimalPlaces = 2;
             nudBirimFiyat.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            nudBirimFiyat.Increment = new decimal(new int[] { 5, 0, 0, 65536 });
             nudBirimFiyat.Location = new Point(252, 37);
             nudBirimFiyat.Margin = new Padding(11, 8, 11, 8);
             nudBirimFiyat.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            nudBirimFiyat.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudBirimFiyat.Name = "nudBirimFiyat";
             nudBirimFiyat.Size = new Size(148, 31);
             nudBirimFiyat.TabIndex = 1;
+            nudBirimFiyat.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // label2
             // 
